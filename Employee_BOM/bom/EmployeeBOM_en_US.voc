@@ -1,0 +1,15 @@
+# Vocabulary Properties
+com.Employee.Employee.checkAward(java.lang.String,java.util.List,double)#phrase.navigation = {this}.checkAward({0}, {1}, {2})
+com.Employee.Employee.checkAward(java.lang.String,java.util.List,double,double)#phrase.navigation = {this}.checkAward({0}, {1}, {2}, {3})
+uuid = 8535fd5e-4afc-4fa9-9382-c4b3c673a537
+
+# com.Employee.Employee
+com.Employee.Employee#concept.label = employee
+com.Employee.Employee.checkAward(java.util.List)#phrase.navigation = {this}.checkAward({0})
+com.Employee.Employee.name#phrase.action = set the name of {this} to {name}
+com.Employee.Employee.name#phrase.navigation = {name} of {this}
+com.Employee.Employee.processSalary()#phrase.navigation = {this}.processSalary()
+com.Employee.Employee.salary#phrase.action = set the salary of {this} to {salary}
+com.Employee.Employee.salary#phrase.navigation = {salary} of {this}
+com.Employee.Employee.types#phrase.action = set the types of {this} to {type}
+com.Employee.Employee.types#phrase.navigation = {type} of {this}

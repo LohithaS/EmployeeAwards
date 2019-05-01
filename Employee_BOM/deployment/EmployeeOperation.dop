@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="EmployeeOperation" targetRuleProjectName="EmployeeAward">
+  <name>EmployeeOperation</name>
+  <uuid>bb9f6d6a-6864-435c-8ac9-45e1c3b9c825</uuid>
+  <referencedVariables variableName="Awards" variableSetName="EmployeeVariables" direction="IN_OUT">
+    <variableSet href="../rules/EmployeeVariables.var#aa18ab4f-788a-4f42-ac2c-8d796f5ab7a5"/>
+  </referencedVariables>
+  <referencedVariables variableName="newSal" variableSetName="EmployeeVariables" direction="OUT">
+    <variableSet href="../rules/EmployeeVariables.var#aa18ab4f-788a-4f42-ac2c-8d796f5ab7a5"/>
+  </referencedVariables>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="EmployeeOperation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../EmployeeAward#ad6522de-d2e3-4697-be94-37afb2f81e96"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

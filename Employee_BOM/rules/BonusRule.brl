@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>BonusRule</name>
+  <uuid>fcaeda86-a341-4240-93a7-f62fbad4a055</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'variable1' to the types of Employee
+            where the salary of Employee is more than 50000
+            or the salary of Employee is less than 50000 ;
+if
+    Employee .checkAward ( the types of Employee ) is more than 0
+then
+    for each string in variable1 :
+        - set newSal to Employee .processSalary ( ) - 5000 ;
+else
+    set newSal to the salary of Employee + 5000 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

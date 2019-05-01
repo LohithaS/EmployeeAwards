@@ -1,0 +1,20 @@
+rule BonusRule {
+   property ilog.rules.business_name = "BonusRule";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      com.Employee.Employee() from Awards;
+      variable1: collect java.lang.String(Awards.salary > 50000
+      	|| Awards.salary < 50000) in Awards.types;
+      evaluate (Awards.checkAward(Awards.types) > 0);
+   } then {
+      foreach (java.lang.String var$_$0 in variable1) {
+         newSal = java.lang.Double.valueOf((double)(Awards.processSalary() - 5000));
+      }
+      ?context.updateContext();
+   } else {
+      newSal = java.lang.Double.valueOf((double)(Awards.salary + 5000));
+      ?context.updateContext();
+   }
+}
+

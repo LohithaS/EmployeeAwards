@@ -1,0 +1,4 @@
+variables {
+  com.Employee.Employee Awards;
+  java.lang.Double newSal;
+}

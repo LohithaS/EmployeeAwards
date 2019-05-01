@@ -1,0 +1,22 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/EmployeeAward//EmployeeAwardsXOM"
+property uuid "0ee95faf-a998-46df-8e6e-40903d407726"
+package com.Employee;
+
+
+public class Employee
+{
+    public string name;
+    public double salary;
+    public java.util.List types domain 0,* class string;
+    public Employee(string arg1, 
+        java.util.List arg2 domain 0,* class string);
+    public Employee(string arg1, 
+        java.util.List arg2 domain 0,* class string, 
+        double arg3);
+    public Employee();
+    public double checkAward(java.util.List arg domain 0,* class string);
+    public double processSalary();
+}
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>EmployeeVariables</name>
+  <uuid>aa18ab4f-788a-4f42-ac2c-8d796f5ab7a5</uuid>
+  <variables name="Awards" type="com.Employee.Employee" initialValue="" verbalization="Employee"/>
+  <variables name="newSal" type="java.lang.Double" initialValue="" verbalization="newSal"/>
+</ilog.rules.studio.model.base:VariableSet>
